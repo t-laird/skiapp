@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TodaysWeather from './TodaysWeather'
 
 
 class DetailedInfo extends Component {
@@ -11,6 +12,7 @@ class DetailedInfo extends Component {
     return (
       <div>
         DetailedInfo
+        <TodaysWeather />
       </div>
     )
   }

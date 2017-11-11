@@ -15,23 +15,33 @@
     outline: none;
     margin-right: 10px;
     margin-left: 10px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    box-shadow: 0px 15px 20px 0px darkgray;
+    transition: 1000ms; }
     .Calendar-Wrap button:hover {
       background-color: #184f92;
+      box-shadow: 0px 5px 10px 0px darkgray;
       color: white; }
   .Calendar-Wrap .Calendar {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 282px;
     box-sizing: border-box; }
     .Calendar-Wrap .Calendar h3 {
       margin: 0px;
       font-size: 26px;
       color: #327fde; }
     .Calendar-Wrap .Calendar .week {
+      border: 1px solid black;
       display: flex;
       flex-wrap: wrap;
       width: 280px; }
+      .Calendar-Wrap .Calendar .week .dayName {
+        width: 40px;
+        height: 15px;
+        font-size: 12px;
+        text-align: center;
+        color: #327fde; }
       .Calendar-Wrap .Calendar .week .day {
         width: 40px;
         height: 40px;
@@ -39,8 +49,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid black;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: 400ms; }
         .Calendar-Wrap .Calendar .week .day:hover {
           background-color: #327fde;
           color: white; }
+      .Calendar-Wrap .Calendar .week .day.empty {
+        background-color: lightgrey;
+        border: none;
+        cursor: default; }

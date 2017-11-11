@@ -16,15 +16,18 @@
     margin-right: 10px;
     margin-left: 10px;
     box-sizing: border-box;
+    box-shadow: 0px 15px 20px 0px darkgray;
+    transition: 1000ms;
     &:hover {
       background-color: darken(rgb(50, 127, 222), 20%);
+      box-shadow: 0px 5px 10px 0px darkgray;
       color: white;
     }
   }
   .Calendar {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 282px;
     box-sizing: border-box;
     h3 {
       margin: 0px;
@@ -32,10 +35,17 @@
       color: rgb(50, 127, 222);
     }
     .week {
+      border: 1px solid black;
       display: flex;
       flex-wrap: wrap;
       width: 280px;
-  
+      .dayName {
+        width: 40px;
+        height: 15px;
+        font-size: 12px;
+        text-align: center;
+        color: rgb(50, 127, 222);
+      }
       .day {
         width: 40px;
         height: 40px;
@@ -43,12 +53,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid black;
         cursor: pointer;
         &:hover {
           background-color: rgb(50, 127, 222);
           color: white;       
         }
+        transition: 400ms;
+      }
+
+      .day.empty {
+        background-color: lightgrey;
+        border: none;
+        cursor: default;
       }
     }
   }

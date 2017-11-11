@@ -79,21 +79,8 @@ class Calendar extends Component {
       result = result.slice(0, 35);
     }
 
-    // this.setState({
-    //   monthStructure: result
-    // });
-
     return result;
   }
-
-  // componentDidMount () {
-  //   this.generateMonthStructure();
-  // }
-
-  // componentWillMount () {
-  //   this.generateMonthStructure();
-  // }
-
 
   render () {
     console.log(this.state);
@@ -103,8 +90,19 @@ class Calendar extends Component {
         <div className="Calendar">
           <h3>{this.state.month}</h3>
           <div className="week">  
+            <div className="dayName">Sun</div>
+            <div className="dayName">Mon</div>
+            <div className="dayName">Tue</div>
+            <div className="dayName">Wed</div>
+            <div className="dayName">Thu</div>
+            <div className="dayName">Fri</div>
+            <div className="dayName">Sat</div>
             {this.generateMonthStructure(this.state.monthIndex).map(day => {
-              return (<div className="day">{day}</div>);
+                let classes = "day";
+                if ({day}.day === "") {
+                  classes += " empty";
+                }
+                return (<div className={classes}>{day}</div>);
             })}
           </div>          
         </div>

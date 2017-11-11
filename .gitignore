@@ -22,3 +22,5 @@ yarn-error.log*
 
 rockymountainApiData.js
 package-lock.json
+
+apiKey.js

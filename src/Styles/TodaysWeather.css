@@ -1,0 +1,55 @@
+.todays-weather {
+  width: 433px; }
+  .todays-weather h1, .todays-weather h4 {
+    font-family: "stencil-std", serif;
+    font-size: 30px; }
+  .todays-weather h2, .todays-weather h3 {
+    font-family: "myriad-pro-semiextended", sans-serif;
+    font-weight: 500; }
+  .todays-weather h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0; }
+  .todays-weather h2 {
+    font-size: 30px;
+    color: #fff;
+    margin: 0; }
+  .todays-weather h3 {
+    font-size: 56px;
+    color: #f7941d;
+    position: absolute; }
+  .todays-weather h4 {
+    color: #0083b3;
+    position: absolute; }
+  .todays-weather .big-caps {
+    font-size: 37px; }
+  .todays-weather .small-text {
+    font-size: 21px; }
+  .todays-weather .todays-weather-header {
+    background: linear-gradient(to bottom, #0083b3 0%, rgba(0, 131, 179, 0.7) 100%);
+    padding: 10px; }
+  .todays-weather .todays-weather-body {
+    background: url("background-assets/todays-weather.svg");
+    background-repeat: no-repeat;
+    width: 433px;
+    height: 337px;
+    position: relative; }
+  .todays-weather .top-alt {
+    top: -3px;
+    left: 141px; }
+  .todays-weather .top-temp {
+    top: 4px;
+    left: 138px; }
+  .todays-weather .base-temp {
+    bottom: 8px;
+    left: 236px; }
+  .todays-weather .base-alt {
+    bottom: 1px;
+    left: 238px; }
+  .todays-weather .sub-title {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .todays-weather .sub-title img {
+    width: 35px;
+    margin: 0 0 0 10px; }

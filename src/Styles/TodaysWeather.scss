@@ -1,0 +1,91 @@
+.todays-weather {
+	width: 433px;
+
+	h1, h4 {
+		font-family: "stencil-std", serif;
+		font-size: 30px;
+	}
+
+	h2, h3 {
+		font-family: "myriad-pro-semiextended", sans-serif;
+		font-weight: 500;
+	}
+
+	h1 {
+		color: #fff;
+		text-align: center;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 30px;
+		color: #fff;
+		margin: 0;
+	}
+
+	h3 {
+		font-size: 56px;
+		color: #f7941d;
+		position: absolute;
+	}
+
+	h4 {
+		color: #0083b3;
+		position: absolute;
+	}
+
+	.big-caps {
+		font-size: 37px;
+	}
+
+	.small-text {
+		font-size: 21px;
+	}
+
+	.todays-weather-header {
+		background: linear-gradient(to bottom, rgba(0,131,179,1) 0%,rgba(0,131,179,0.7) 100%);
+		padding: 10px;
+	}
+
+	.todays-weather-body {
+		background: url('background-assets/todays-weather.svg');
+		background-repeat: no-repeat;
+		width: 433px;
+		height: 337px;
+		position: relative;
+	}
+
+	.top-alt {
+		top: -3px;
+		left: 141px;
+	}
+
+	.top-temp {
+		top: 4px;
+		left: 138px;
+	}
+
+	.base-temp {
+		bottom: 8px;
+		left: 236px;
+	}
+
+	.base-alt {
+		bottom: 1px;
+		left: 238px;
+	}
+
+	.sub-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sub-title img {
+		width: 35px;
+		margin: 0 0 0 10px;
+	}
+
+
+
+}

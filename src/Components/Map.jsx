@@ -39,6 +39,7 @@ class Map extends Component {
                 src={this.state.imgSrc}
                 onMouseOver={this.handleMouseOver.bind(this, 'wyoming')}
                 onMouseOut={this.handleMouseOut.bind(this)}
+                alt="wyoming"
           />
           <area className="utah-hover" 
                 shape="poly"
@@ -46,6 +47,7 @@ class Map extends Component {
                 src={this.state.imgSrc}
                 onMouseOver={this.handleMouseOver.bind(this, 'utah')}
                 onMouseOut={this.handleMouseOut.bind(this)}
+                alt="utah"
           />
           <area className="colorado-central-hover" 
                 shape="poly"
@@ -53,6 +55,7 @@ class Map extends Component {
                 src={this.state.imgSrc}
                 onMouseOver={this.handleMouseOver.bind(this, 'colorado-central')}
                 onMouseOut={this.handleMouseOut.bind(this)}
+                alt="central colorado"
           />
           <area className="colorado-southern-hover" 
                 shape="poly"
@@ -60,6 +63,7 @@ class Map extends Component {
                 src={this.state.imgSrc}
                 onMouseOver={this.handleMouseOver.bind(this, 'colorado-southern')}
                 onMouseOut={this.handleMouseOut.bind(this)}
+                alt="southern colorado"
           />
           <area className="new-mexico-hover" 
                 shape="poly"
@@ -67,6 +71,7 @@ class Map extends Component {
                 src={this.state.imgSrc}
                 onMouseOver={this.handleMouseOver.bind(this, 'new-mexico')}
                 onMouseOut={this.handleMouseOut.bind(this)}
+                alt="new mexico"
           />
         </map>
 

@@ -1,0 +1,55 @@
+.Calendar-Wrap{
+  display: flex;
+  width: 540px;
+  align-items: center;
+  margin: 0px auto;
+  padding-top: 45px;
+  button {
+    height: 50px;
+    width: 100px;
+    min-width: 100px;
+    background-color: rgb(50, 127, 222);
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    &:hover {
+      background-color: darken(rgb(50, 127, 222), 20%);
+      color: white;
+    }
+  }
+  .Calendar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    box-sizing: border-box;
+    h3 {
+      margin: 0px;
+      font-size: 26px;
+      color: rgb(50, 127, 222);
+    }
+    .week {
+      display: flex;
+      flex-wrap: wrap;
+      width: 280px;
+  
+      .day {
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(50, 127, 222);
+          color: white;       
+        }
+      }
+    }
+  }
+}

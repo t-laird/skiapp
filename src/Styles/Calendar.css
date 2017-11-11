@@ -1,0 +1,46 @@
+.Calendar-Wrap {
+  display: flex;
+  width: 540px;
+  align-items: center;
+  margin: 0px auto;
+  padding-top: 45px; }
+  .Calendar-Wrap button {
+    height: 50px;
+    width: 100px;
+    min-width: 100px;
+    background-color: #327fde;
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-sizing: border-box; }
+    .Calendar-Wrap button:hover {
+      background-color: #184f92;
+      color: white; }
+  .Calendar-Wrap .Calendar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    box-sizing: border-box; }
+    .Calendar-Wrap .Calendar h3 {
+      margin: 0px;
+      font-size: 26px;
+      color: #327fde; }
+    .Calendar-Wrap .Calendar .week {
+      display: flex;
+      flex-wrap: wrap;
+      width: 280px; }
+      .Calendar-Wrap .Calendar .week .day {
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        cursor: pointer; }
+        .Calendar-Wrap .Calendar .week .day:hover {
+          background-color: #327fde;
+          color: white; }

@@ -1,0 +1,11 @@
+.Header {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center; }
+  .Header h1 {
+    color: #327fde;
+    margin-top: 0px;
+    font-size: 80px;
+    font-family: sans-serif; }

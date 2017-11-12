@@ -49,7 +49,14 @@
   .todays-weather .sub-title {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
   .todays-weather .sub-title img {
     width: 35px;
     margin: 0 0 0 10px; }
+  .todays-weather #blue-triangle {
+    position: absolute;
+    right: -70px;
+    width: 80px;
+    z-index: 1;
+    top: -77px; }

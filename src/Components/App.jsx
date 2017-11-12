@@ -1,3 +1,4 @@
+import '../Styles/normalize.css';
 import '../Styles/App.scss';
 import React, { Component } from 'react';
 import DetailedInfo from './DetailedInfo';

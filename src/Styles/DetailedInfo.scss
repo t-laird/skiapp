@@ -1,0 +1,130 @@
+.detailed-block {
+	display: flex;
+	justify-content: flex-start;
+
+	h2 {
+		font-family: 'stencil-std', serif;
+		font-size: 30px;
+		margin-right: 80px;
+	}
+
+	.details-column-left h4 {
+		font-family: "myriad-pro-semiextended", sans-serif;
+		font-size: 24px;
+		font-weight: 300;
+		color: #0083b3;
+		margin: 0;
+	}
+
+	h5 {
+		font-family: "myriad-pro-semiextended", sans-serif;
+		color: #f7941d;
+		opacity: .6;
+		margin: 3px 0;
+    font-size: 30px;
+    font-weight: 500;
+	}
+
+	h6 {
+		font-family: "myriad-pro-semiextended", sans-serif;
+		font-size: 18px;
+		color: #58595b;
+		margin: 0;
+	}
+
+	.details-powder-day-date {
+		opacity: 1;
+		font-weight: 700;
+	}
+
+	.details-right {
+		margin-left: 80px;
+	}
+
+	.details-header {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 96px;
+	}
+
+	.resort-logos {
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+	}
+
+	.details-columns {
+		display: flex;
+		margin-top: 40px;
+	}
+
+	.left-border-box {
+		width: 16px;
+		background-color: #0083b3;
+		opacity: .43;
+	}
+
+	.details-column-left, .details-column-right {
+		border-left: 16px solid #0083b3;
+		padding: 0 25px;
+	}
+
+	.details-column-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0;
+	}
+
+	.details-column-right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0;
+	}
+
+	.details-column-left img {
+		width: 30px;
+		margin: 0 4px;
+		opacity: .5;
+	}
+
+	.orange-span {
+		color: #f7941d;
+		font-weight: 700;
+	}
+
+	.grey-span {
+		color: #58595b;
+		font-weight: 700;
+	}
+
+	.hours-block {
+		margin: 10px 0;
+	}
+
+	.hours-opacity {
+		opacity: .6;
+	}
+
+	.hours-spacer {
+		margin-left: 14px;
+	}
+
+	.details-column-right img {
+		display: block;
+		margin: 14px auto 0;
+
+	}
+
+
+
+
+
+
+
+
+
+
+}

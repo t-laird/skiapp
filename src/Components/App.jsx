@@ -31,6 +31,7 @@ class App extends Component {
     .then(data => data.json())
     .then(data => {
       const skiData = cleanSkiData(data)
+      console.log(skiData)
     })
   }
 

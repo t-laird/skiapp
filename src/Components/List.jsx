@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Styles/List.css';
 
 
 class List extends Component {
@@ -9,7 +10,7 @@ class List extends Component {
 
   render () {
     return (
-      <div>
+      <div className="List">
         List
       </div>
     )

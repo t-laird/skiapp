@@ -1,0 +1,6 @@
+.App div.arrow {
+  background-image: url("../Styles/assets/play-button.png");
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  transition: 2s; }

@@ -70,13 +70,14 @@
   .Calendar-squares {
     margin: 0px auto;
     width: 410px;
-    height: 160px;
+    height: 170px;
     display: flex;
+    align-items: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     .day {
       width: 80px;
       height: 80px;
-      margin-top: 10px;
       border: 1px solid black;
       box-sizing: border-box;
       display: flex;
@@ -89,6 +90,12 @@
         width: 90px;
         height: 90px;
         z-index: 1;
+        .month {
+          font-size: 13px;
+        }
+        .dayNum {
+          font-size: 50px;
+        }
       }
       span {
         width: 100%;
@@ -107,11 +114,18 @@
         color: rgb(50, 127, 222);        
       }
       .dayNum {
+        transition: 1s;
         font-size: 35px;
         color: rgb(50, 127, 222);
       }
       .dayOfWeek {
         font-size: 11px;
+      }
+    }
+    .day.selected{
+      background-color: rgb(50, 127, 222);
+      .dayNum {
+        color: white;
       }
     }
   }

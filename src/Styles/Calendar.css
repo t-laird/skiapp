@@ -10,13 +10,14 @@
   .Calendar .Calendar-squares {
     margin: 0px auto;
     width: 410px;
-    height: 160px;
+    height: 170px;
     display: flex;
+    align-items: space-between;
+    justify-content: center;
     flex-wrap: wrap; }
     .Calendar .Calendar-squares .day {
       width: 80px;
       height: 80px;
-      margin-top: 10px;
       border: 1px solid black;
       box-sizing: border-box;
       display: flex;
@@ -29,6 +30,10 @@
         width: 90px;
         height: 90px;
         z-index: 1; }
+        .Calendar .Calendar-squares .day:hover .month {
+          font-size: 13px; }
+        .Calendar .Calendar-squares .day:hover .dayNum {
+          font-size: 50px; }
       .Calendar .Calendar-squares .day span {
         width: 100%;
         font-family: "stencil-std", serif; }
@@ -42,7 +47,12 @@
         position: absolute;
         color: #327fde; }
       .Calendar .Calendar-squares .day .dayNum {
+        transition: 1s;
         font-size: 35px;
         color: #327fde; }
       .Calendar .Calendar-squares .day .dayOfWeek {
         font-size: 11px; }
+    .Calendar .Calendar-squares .day.selected {
+      background-color: #327fde; }
+      .Calendar .Calendar-squares .day.selected .dayNum {
+        color: white; }

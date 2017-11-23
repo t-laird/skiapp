@@ -56,7 +56,7 @@ let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 
 let dateToday = new Date();
 let monthToday = dateToday.getMonth();
-let dayToday = dateToday.getDate() + 5;
+let dayToday = dateToday.getDate();
 let dayOfWeek = dateToday.getDay();
 
 
@@ -69,7 +69,8 @@ class Calendar extends Component {
       currentDay: dayToday,
       monthDayDayOfWeek: []
     };
-  }
+    this.selectDay = this.selectDay.bind(this);
+  } 
 
   componentWillMount() {
     let result = [];
@@ -79,7 +80,7 @@ class Calendar extends Component {
 
     for (let i = 0 ; i < 10 ; i++){
       let indivDay = {
-        day, dayName, month
+        day, dayName, month, selected: false
       };
       result.push(indivDay);
 
@@ -101,6 +102,20 @@ class Calendar extends Component {
     });
   }
 
+  selectDay(e) {
+    let days = this.state.monthDayDayOfWeek;
+    days.forEach( day => {
+      day.selected = false;
+    });
+    days[e.target.parentElement.id].selected = true;
+
+    this.props.setDate(days[e.target.parentElement.id]);
+    this.setState({
+      monthDayDayOfWeek: days
+    });
+    
+  }
+
   render() {
     return (
       <div className="Calendar">
@@ -109,14 +124,13 @@ class Calendar extends Component {
         <h5>Due to Forecast Limitations we can only serve predictions for the next 10 days.</h5>
         <div className="Calendar-squares">
           {this.state.monthDayDayOfWeek.map((day, index) => {
-            console.log(this.state.monthDayDayOfWeek);
             if (index === 0) {
               return (
-                <div className="day"><span className="month">{months[day.month].month}</span><span className="today">Today!</span><span className="dayNum">{day.day}</span><span className="dayOfWeek">{daysOfWeek[day.dayName]}</span></div>
+                <div className={day.selected ? "day selected" : "day" } key={index} id={index} onClick={this.selectDay}><span className="month">{months[day.month].month}</span><span className="today">Today!</span><span className="dayNum">{day.day}</span><span className="dayOfWeek">{daysOfWeek[day.dayName]}</span></div>
               );
             } else {
               return (
-              <div className="day"><span className="month">{months[day.month].month}</span><span className="dayNum">{day.day}</span><span className="dayOfWeek">{daysOfWeek[day.dayName]}</span></div>
+              <div className={day.selected ? "day selected" : "day" } key={index} id={index} onClick={this.selectDay}><span className="month">{months[day.month].month}</span><span className="dayNum">{day.day}</span><span className="dayOfWeek">{daysOfWeek[day.dayName]}</span></div>
               );
             }
           })}

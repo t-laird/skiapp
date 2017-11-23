@@ -1,5 +1,5 @@
 import '../Styles/normalize.css';
-import '../Styles/App.scss';
+import '../Styles/App.css';
 import React, { Component } from 'react';
 import DetailedInfo from './DetailedInfo';
 import Header from './Header';
@@ -16,8 +16,29 @@ class App extends Component {
     this.state = {
       detailedInfo: {},
       restortInfo: {},
-      list: {}
-    }
+      list: {},
+      selectedDate: {},
+      selectedRegion: {},
+      arrowPosition: 250
+    };
+
+    this.setDate = this.setDate.bind(this);
+    this.setRegion = this.setRegion.bind(this);
+  }
+
+  setDate(date) {
+    this.setState({
+      selectedDate: date,
+      arrowPosition: 450
+    });
+  }
+
+  setRegion(region) {
+    console.log('region', region);
+    this.setState({
+      selectedRegion: region,
+      arrowPosition: 900
+    });
   }
 
   // componentDidMount() {
@@ -35,13 +56,14 @@ class App extends Component {
     })
   }
 
-  render() {
+  render() {    
     return (
       <div className="App">
+        <div className="arrow" style={{top: this.state.arrowPosition + "px"}}></div>
         <Header />
-        <Calendar />
+        <Calendar setDate={this.setDate} />
+        <Map setRegion={this.setRegion}/>
         <List />
-        <Map />
         <DetailedInfo />
       </div>
     );

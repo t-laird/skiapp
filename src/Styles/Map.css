@@ -1,2 +1,5 @@
 .map {
-  width: 300px; }
+  width: 335px;
+  margin: 0px auto; }
+  .map area {
+    cursor: pointer; }
